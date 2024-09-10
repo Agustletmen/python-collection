@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['head', 'helmet', 'person']
+
+roboflow:
+  workspace: cv-oshih
+  project: hard-hat-sample-qlcin
+  version: 2
+  license: Public Domain
+  url: https://app.roboflow.com/cv-oshih/hard-hat-sample-qlcin/2
