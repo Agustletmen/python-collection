@@ -1,8 +1,5 @@
 # from supervision.assets import download_assets, VideoAssets
-
 # download_assets(VideoAssets.PEOPLE_WALKING)
-
-
 
 import numpy as np
 import supervision as sv
