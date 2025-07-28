@@ -7,9 +7,7 @@ sciPy：基于 numpy，科学计算（积分、优化等）
 SymPy：符号计算（如代数、微积分）
 
 
-
-PIL（Python Imaging Library）
-Pillow
+Pillow：替代了PIL（Python Imaging Library）
 dlib
 cv2
 mediapipe
@@ -18,24 +16,19 @@ scikit-learn
 tensorflow
 pytorch
 
-LangChain
-AutoGPT
+
 Microsoft AutoGen
 LLM API
-
+LangChain（适合 LLM 驱动的 Agent）
+AutoGPT（自主任务分解）
+MetaGPT（多 Agent 协作）
 
 requests
 django
 flask
 fastapi
 
-os
-sys
-datetime
-json
-re
-collections
+mcp：Model Context Protocol
 
-urllib
-socket
-logging
+LlamaIndex
+Haystack
