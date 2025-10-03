@@ -13,7 +13,6 @@ drawing_spec = mp_drawing.DrawingSpec(thickness=1, circle_radius=1)
 
 # 打开摄像头
 cap = cv2.VideoCapture(0)
-# cap = cv2.VideoCapture("rtsp://admin:xirui360@192.168.3.136:554/Streaming/Channels/101")
 while cap.isOpened():
     success, image = cap.read()
     if not success:

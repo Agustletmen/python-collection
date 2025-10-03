@@ -20,19 +20,19 @@ while cap.isOpened():
 
     # 将 BGR 图像转换为 RGB
     image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-    
+
     # 进行人脸检测
     results = face_detection.process(image_rgb)
-    
+
     # 如果检测到人脸，绘制检测框
     if results.detections:
         for detection in results.detections:
             # 绘制人脸检测框和关键点
             mp_drawing.draw_detection(image, detection)
-    
+
     # 显示结果
     cv2.imshow('MediaPipe Face Detection', image)
-    
+
     # 按 'q' 退出
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
