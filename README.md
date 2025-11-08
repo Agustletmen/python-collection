@@ -11,34 +11,22 @@ PyQt
 Pyside6（对应 Qt6）
 Pyside2（对应 Qt5）
 
-# 机器学习
-matplotlib
-seaborn：基于 Matplotlib
 
-numpy
-pandas：基于 numpy 
-sciPy：基于 numpy，科学计算（积分、优化等）
-SymPy：符号计算（如代数、微积分）
+# 模型部署
+- ONNX
+- TensorRT
+- OpenVINO
 
 
-scikit-learn
-tensorflow
-pytorch
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+# 动作识别
+动作识别数据集：UCF50、UCF101
 
-Keras
+视频帧采样策略
+- uniform 均匀采样
+- random_segment 随机片段采样
+- dense 密集分段采样
 
 
 
-Pillow：替代了PIL（Python Imaging Library）
-dlib
-cv2
-mediapipe
-ultralytics：yolo
-supervision
-
-NLTK
-spaCy
-Transformers：Hugging Face 开发，支持 BERT、GPT 等预训练模型。
-
-
+# 人脸识别
+BlazeFace（检测）+ MobileFaceNet（特征提取） 
