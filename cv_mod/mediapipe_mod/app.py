@@ -5,8 +5,8 @@ import os
 from datetime import datetime
 
 # 初始化 MediaPipe Face Detection
-mp_face_detection = mp.solutions.face_detection
-mp_drawing = mp.solutions.drawing_utils
+mp_face_detection = mp.tasks.face_detection
+mp_drawing = mp.tasks.drawing_utils
 face_detection = mp_face_detection.FaceDetection(
     model_selection=1,  # 0 适用于近距离人脸，1 适用于最远 5 米的人脸
     min_detection_confidence=0.5  # 最小检测置信度
