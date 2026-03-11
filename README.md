@@ -1,26 +1,16 @@
-隐马尔可夫模型（HMM）
-高斯混合模型（GMM）
-马尔可夫链模型
+pip install uv
+uv init
 
-io_uring
-libevent
-libuv
-libev
-libeio
+uv sync
+uv sync --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+uv sync --index-url https://mirrors.ustc.edu.cn/pypi/web/simple
 
+# 添加新依赖到 pyproject.toml
+uv add fastapi  # 运行依赖
+uv add --dev pytest  # 开发依赖
 
-心跳、拆包、粘包、重连等长连接逻辑
+# 移除依赖
+uv remove requests
 
-TCP 是流式协议（像水管里的水流），不是 “数据包” 协议：
-粘包：客户端连续发A和B，服务器可能一次收到AB（数据粘在一起）。
-拆包：客户端发大数据包ABCDE，服务器可能先收AB，再收CDE（数据被拆分）。
-产生原因：TCP 的 Nagle 算法、滑动窗口、MTU（最大传输单元）限制。
-
-
-
-
-
-
-归一化（Normalization）是将数据特征缩放到固定范围（最常见的是 0~1）的过程
-
-
+# 生成锁定文件（类似 poetry.lock）
+uv lock
