@@ -12,6 +12,7 @@ dependencies = [
     "opencv-python>=4.13.0.92",
     "pandas>=3.0.1",
     "scikit-learn>=1.8.0",
+    "ultralytics>=8.4.36",
     "xgboost>=3.2.0",
 ]
 [[tool.uv.index]]
