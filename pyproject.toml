@@ -5,12 +5,17 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "deepagents>=0.5.3",
     "jupyterlab>=4.5.5",
+    "langchain-community>=0.4.1",
+    "langchain-openai>=1.1.14",
+    "langgraph-checkpoint-postgres>=3.0.5",
     "lightgbm>=4.6.0",
     "matplotlib>=3.10.8",
     "mediapipe>=0.10.33",
     "opencv-python>=4.13.0.92",
     "pandas>=3.0.1",
+    "psycopg[binary,pool]>=3.3.3",
     "scikit-learn>=1.8.0",
     "ultralytics>=8.4.36",
     "xgboost>=3.2.0",
