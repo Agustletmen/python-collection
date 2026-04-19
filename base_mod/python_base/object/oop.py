@@ -1,3 +1,9 @@
+"""
+__foo__: 定义的是特殊方法，一般是系统定义名字 ，类似 __init__() 之类的。
+_foo: 以单下划线开头的表示的是 protected 类型的变量，即保护类型只能允许其本身与子类进行访问，不能用于 from module import *
+__foo: 双下划线的表示的是私有类型(private)的变量, 只能是允许这个类本身进行访问了。
+foo：不带下划线代表public
+"""
 class Student:  # 类名一般首字母大写
     num = 0  # 类属性
 
@@ -22,7 +28,7 @@ class Student:  # 类名一般首字母大写
         print('学生个数：', cls.num)
 
     @staticmethod
-    def sayHello():  # 静态方法
+    def say_hello():  # 静态方法
         print('Hello')
         pass
 
@@ -33,6 +39,6 @@ class Student:  # 类名一般首字母大写
 """
 
 s = Student("王二麻子", '花城二小')
-Student.sayHello()  # 静态方法的调用，既可以使用类名，也可以使用类对象
+Student.say_hello()  # 静态方法的调用，既可以使用类名，也可以使用类对象
 s.introduce()  # 对象方法的调用
 Student.count()  # 类方法推荐使用类名直接调用，当然也可以使用实例对象来调用（不推荐）
