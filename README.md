@@ -1,3 +1,4 @@
+```shell
 pip install uv
 uv init
 
@@ -14,3 +15,14 @@ uv remove requests
 
 # 生成锁定文件（类似 poetry.lock）
 uv lock
+```
+
+
+
+```shell
+pip install supervision
+pip install onnx
+pip install onnxruntime
+pip install insightface
+
+```

@@ -1,4 +1,5 @@
 face_recognition 是基于 dlib 的人脸识别库
+insightface 工业级最强人脸识别库（精度远超 dlib）
 
 HAAR
 HOG
